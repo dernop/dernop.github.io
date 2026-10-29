@@ -1,0 +1,408 @@
+<!-- Bundled by build.py: index.html + styles.css + app.js -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f7f2eb" />
+    <meta
+      name="description"
+      content="A small, mobile-friendly overview of the TikTok creators you follow."
+    />
+    <title>Creator watch</title>
+    <style>
+:root{color-scheme: light;--bg: #f7f2eb;--ink: #171717;--muted: #706b64;--quiet: #8b857d;--line: rgba(23,23,23,0.1);--line-strong: rgba(23,23,23,0.16);--surface: rgba(255,255,255,0.68);--surface-strong: #ffffff;--accent: #fe2c55;--accent-dark: #d91f44;--mint: #25f4ee;--green: #12875c;--red: #c62828;--shadow-soft: 0 14px 45px rgba(65,47,30,0.07);--shadow-button: 0 9px 26px rgba(23,23,23,0.16);--radius: 22px;--page-width: 1320px;--page-gutter: clamp(1rem,4vw,2rem);}*,*::before,*::after{box-sizing: border-box;}html{min-width: 320px;background: var(--bg);scroll-behavior: smooth;}body{min-height: 100vh;min-height: 100svh;margin: 0;overflow-x: hidden;background: radial-gradient(60rem 34rem at 112% -8%,rgba(37,244,238,0.18),transparent 62%),radial-gradient(52rem 32rem at -18% 2%,rgba(254,44,85,0.12),transparent 60%),linear-gradient(180deg,#fbf8f3 0%,var(--bg) 52%,#f4eee6 100%);color: var(--ink);font-family: ui-sans-serif,-apple-system,BlinkMacSystemFont, "Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size: 16px;line-height: 1.5;-webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;}::selection{background: rgba(254,44,85,0.2);}img,svg,iframe{max-width: 100%;}a{color: inherit;}button,input{font: inherit;}button{-webkit-tap-highlight-color: transparent;}:focus-visible{outline: 3px solid rgba(254,44,85,0.42);outline-offset: 3px;}.sr-only{position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip: rect(0,0,0,0);white-space: nowrap;border: 0;}.skip-link{position: fixed;z-index: 100;top: 0.75rem;left: 0.75rem;padding: 0.65rem 1rem;border-radius: 999px;background: var(--ink);color: #fff;font-size: 0.85rem;font-weight: 700;text-decoration: none;transform: translateY(-180%);transition: transform 160ms ease;}.skip-link:focus{transform: translateY(0);}.page-shell{width: min(100%,calc(var(--page-width) + (var(--page-gutter) * 2)));margin-inline: auto;padding: max(0.5rem,env(safe-area-inset-top)) var(--page-gutter) max(1.25rem,env(safe-area-inset-bottom));}.site-header{display: flex;align-items: center;justify-content: space-between;gap: clamp(1rem,3vw,2rem);padding: clamp(1.5rem,5vw,3.25rem) 0 clamp(1.25rem,3vw,1.75rem);}.brand{display: flex;align-items: center;min-width: 0;gap: clamp(0.8rem,2vw,1.1rem);}.brand-mark{position: relative;display: grid;flex: 0 0 auto;width: clamp(2.8rem,6vw,3.35rem);aspect-ratio: 1;place-items: center;border-radius: 34%;background: #151515;color: #fff;box-shadow: 4px 4px 0 -1px var(--mint),-4px 4px 0 -1px rgba(254,44,85,0.88),0 10px 30px rgba(23,23,23,0.13);}.brand-mark svg{width: 57%;height: 57%;transform: translate(1px,-1px);}.brand-copy{min-width: 0;}.eyebrow{margin: 0 0 0.22rem;color: var(--accent-dark);font-size: clamp(0.64rem,1.3vw,0.72rem);font-weight: 800;letter-spacing: 0.17em;line-height: 1.2;text-transform: uppercase;}h1{margin: 0;font-size: clamp(1.65rem,4.6vw,2.75rem);font-weight: 850;letter-spacing: -0.055em;line-height: 0.98;}.tagline{margin: 0.38rem 0 0;color: var(--muted);font-size: clamp(0.82rem,1.7vw,0.97rem);}.refresh-button{display: inline-flex;flex: 0 0 auto;align-items: center;justify-content: center;min-height: 2.85rem;padding: 0 1.15rem;border: 1px solid #151515;border-radius: 999px;background: #151515;box-shadow: var(--shadow-button);color: #fff;cursor: pointer;font-size: 0.88rem;font-weight: 750;gap: 0.55rem;transition: background 160ms ease,box-shadow 160ms ease,transform 160ms ease;}.refresh-button:hover:not(:disabled){background: #000;box-shadow: 0 12px 30px rgba(23,23,23,0.2);transform: translateY(-1px);}.refresh-button:active:not(:disabled){transform: translateY(0);}.refresh-button:disabled{cursor: wait;opacity: 0.72;}.refresh-button svg{width: 1.15rem;height: 1.15rem;}.control-bar{display: flex;align-items: center;justify-content: space-between;min-height: 3.2rem;margin: 0.2rem 0 clamp(1.15rem,3vw,1.8rem);padding: 0.62rem 0.7rem 0.62rem 1rem;border: 1px solid var(--line);border-radius: 1.1rem;background: var(--surface);box-shadow: var(--shadow-soft);gap: 0.75rem;-webkit-backdrop-filter: blur(16px);backdrop-filter: blur(16px);}.status{display: flex;align-items: center;min-width: 0;color: #514c45;font-size: 0.84rem;font-weight: 650;gap: 0.58rem;}.status-text{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}.status-dot{position: relative;flex: 0 0 auto;width: 0.5rem;height: 0.5rem;border-radius: 50%;background: var(--green);box-shadow: 0 0 0 4px rgba(18,135,92,0.12);transition: background 180ms ease,box-shadow 180ms ease;}.status[data-state="error"] .status-dot{background: var(--red);box-shadow: 0 0 0 4px rgba(198,40,40,0.1);}.control-actions{display: flex;flex: 0 0 auto;align-items: center;gap: 0.85rem;}.creator-count{padding-right: 0.85rem;border-right: 1px solid var(--line);color: var(--quiet);font-size: 0.78rem;font-weight: 650;white-space: nowrap;}.auto-refresh{display: inline-flex;align-items: center;border-radius: 999px;color: #4d4842;cursor: pointer;font-size: 0.79rem;font-weight: 700;gap: 0.45rem;-webkit-user-select: none;user-select: none;white-space: nowrap;}.auto-refresh input{position: absolute;width: 1px;height: 1px;overflow: hidden;opacity: 0;pointer-events: none;}.switch{position: relative;flex: 0 0 auto;width: 2.15rem;height: 1.28rem;border-radius: 999px;background: #d7d0c7;box-shadow: inset 0 1px 2px rgba(23,23,23,0.08);transition: background 180ms ease;}.switch::after{position: absolute;top: 0.16rem;left: 0.16rem;width: 0.96rem;height: 0.96rem;border-radius: 50%;background: #fff;box-shadow: 0 1px 3px rgba(23,23,23,0.24);content: "";transition: transform 180ms ease;}.auto-refresh input:checked + .switch{background: #171717;}.auto-refresh input:checked + .switch::after{transform: translateX(0.87rem);}.auto-refresh input:focus-visible + .switch{outline: 3px solid rgba(254,44,85,0.42);outline-offset: 2px;}.auto-time{color: var(--quiet);font-weight: 550;}.creator-grid{display: grid;grid-template-columns: repeat(2,minmax(0,1fr));align-items: start;gap: clamp(1.15rem,2.5vw,1.9rem);}.creator-grid[data-count="1"]{grid-template-columns: minmax(0,780px);justify-content: center;}.creator{min-width: 0;}.creator-embed[data-state="pending"],.creator-embed[data-state="loading"]{display: grid;min-height: clamp(280px,46vh,420px);place-items: center;border: 1px solid var(--line);border-radius: var(--radius);background: var(--surface);}.embed-placeholder{display: flex;align-items: center;color: var(--quiet);font-size: 0.85rem;font-weight: 650;gap: 0.6rem;}.embed-placeholder-spinner{width: 0.9rem;height: 0.9rem;border: 2px solid rgba(23,23,23,0.16);border-top-color: var(--accent);border-radius: 50%;animation: embed-spin 800ms linear infinite;}.embed-error{max-width: 20rem;margin: 0;padding: 1rem;color: var(--muted);font-size: 0.88rem;text-align: center;}@keyframes embed-spin{to{transform: rotate(360deg);}}.creator .tiktok-embed{width: 100%!important;min-width: 0!important;max-width: 100%!important;margin: 0!important;}.creator .tiktok-embed iframe{display: block;border-radius: 8px;}.site-footer{display: flex;align-items: flex-end;justify-content: space-between;margin-top: clamp(2.25rem,5vw,4rem);padding: 1.25rem 0 0.5rem;border-top: 1px solid var(--line);color: var(--muted);font-size: 0.78rem;gap: 1rem;}.site-footer p{max-width: 44rem;margin: 0;}.footer-meta{flex: 0 0 auto;color: var(--quiet);text-align: right;}.noscript{position: fixed;right: 1rem;bottom: 1rem;left: 1rem;z-index: 20;padding: 0.9rem 1.1rem;border: 1px solid rgba(198,40,40,0.2);border-radius: 1rem;background: #fff4f4;color: #7a1f1f;font-size: 0.9rem;text-align: center;}@media (max-width: 960px){.creator-grid{grid-template-columns: minmax(0,1fr);}}@media (max-width: 620px){.page-shell{padding-right: max(0.95rem,env(safe-area-inset-right));padding-left: max(0.95rem,env(safe-area-inset-left));}.site-header{align-items: flex-start;}.tagline{max-width: 16rem;}.refresh-button{width: 2.85rem;min-width: 2.85rem;padding: 0;}.button-label{position: absolute;width: 1px;height: 1px;overflow: hidden;clip: rect(0 0 0 0);clip-path: inset(50%);white-space: nowrap;}.control-bar{padding-left: 0.85rem;}.creator-count{display: none;}.site-footer{display: block;}.footer-meta{margin-top: 0.5rem!important;text-align: left;}}@media (max-width: 390px){.eyebrow{letter-spacing: 0.13em;}.brand-mark{width: 2.65rem;}.auto-time{display: none;}.status{font-size: 0.8rem;}}@media (prefers-reduced-motion: reduce){html{scroll-behavior: auto;}*,*::before,*::after{animation-duration: 0.01ms!important;animation-iteration-count: 1!important;scroll-behavior: auto!important;transition-duration: 0.01ms!important;}}
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#creators">Skip to creators</a>
+
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M14.25 3.5v11.2a4.3 4.3 0 1 1-3.08-4.13"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+              <path
+                d="M14.25 4.1c.72 2.91 2.44 4.45 5.25 4.7"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+
+          <div class="brand-copy">
+            <p class="eyebrow">Your TikTok digest</p>
+            <h1>Creator watch</h1>
+            <p class="tagline">Latest posts from the people you follow.</p>
+          </div>
+        </div>
+
+        <button class="refresh-button" id="refresh-button" type="button" aria-label="Reload the dashboard">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M20 11a8 8 0 1 0-2.34 6.34M20 5v6h-6"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span class="button-label">Refresh</span>
+        </button>
+      </header>
+
+      <section class="control-bar" aria-label="Refresh status and settings">
+        <div class="status" id="status" data-state="ready">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span class="status-text" id="status-text">Refreshed just now</span>
+          <span class="sr-only" id="live-status" role="status" aria-live="polite"></span>
+        </div>
+
+        <div class="control-actions">
+          <span class="creator-count" id="creator-count">1 creator</span>
+
+          <label
+            class="auto-refresh"
+            title="Reload the dashboard automatically while this tab is visible"
+          >
+            <input type="checkbox" id="auto-refresh" aria-label="Auto-refresh every 5 minutes" />
+            <span class="switch" aria-hidden="true"></span>
+            <span>Auto <span class="auto-time">5 min</span></span>
+          </label>
+        </div>
+      </section>
+
+      <main id="creators" class="creator-grid" aria-label="Followed TikTok creators"></main>
+
+      <footer class="site-footer">
+        <p>
+          Embeds show each creator&rsquo;s newest posts. Auto-refresh reloads the dashboard every
+          5 minutes while it is open.
+        </p>
+        <p class="footer-meta">Unofficial dashboard &middot; Content served by TikTok</p>
+      </footer>
+    </div>
+
+    <noscript>
+      <div class="noscript">This page needs JavaScript to load the TikTok creator embeds.</div>
+    </noscript>
+
+    <script>
+'use strict';
+const CREATORS=[
+{handle:'nykolas.nyk79'},
+{handle:'nyk.nykolas2'},
+{handle:'aniolku._.b'},
+];
+const SETTINGS={
+autoRefreshMinutes:5,
+autoRefreshStorageKey:'creator-watch:auto-refresh',
+embedScriptUrl:'https://www.tiktok.com/embed.js',
+embedStaggerMs:1500,
+embedObserverMargin:'200px 0px',
+embedRenderTimeoutMs:15000,
+statusClockIntervalMs:20000,
+};
+const ui={
+grid:document.querySelector('#creators'),
+refreshButton:document.querySelector('#refresh-button'),
+autoRefresh:document.querySelector('#auto-refresh'),
+status:document.querySelector('#status'),
+statusText:document.querySelector('#status-text'),
+liveStatus:document.querySelector('#live-status'),
+creatorCount:document.querySelector('#creator-count'),
+};
+const state={
+autoRefresh:readAutoRefreshPreference(),
+lastRefresh:Date.now(),
+statusKind:'ready',
+embedQueue:[],
+embedBusy:false,
+embedObserver:null,
+};
+const creators=normalizeCreators(CREATORS);
+initialize();
+function initialize(){
+renderCreatorShells();
+bindControls();
+updateCreatorCount();
+ui.autoRefresh.checked=state.autoRefresh;
+if(!creators.length){
+setStatus('error','No creators configured yet');
+ui.refreshButton.disabled=true;
+return;
+}
+setStatus('ready','Refreshed just now');
+startStatusClock();
+observeCreatorEmbeds();
+}
+function normalizeCreators(entries){
+const seen=new Set();
+return(Array.isArray(entries)?entries:[])
+.map((entry)=>{
+const value=typeof entry==='string'?entry:entry?.handle;
+const handle=normalizeHandle(value);
+return handle?{handle}:null;
+})
+.filter((creator)=>{
+if(!creator||seen.has(creator.handle))return false;
+seen.add(creator.handle);
+return true;
+});
+}
+function normalizeHandle(value){
+if(!value)return '';
+let handle=String(value).trim();
+if(/^https?:\/\//i.test(handle)){
+const match=handle.match(/tiktok\.com\/@([^/?#]+)/i);
+if(!match)return '';
+handle=match[1];
+}
+try{
+handle=decodeURIComponent(handle);
+}catch{
+return '';
+}
+return handle
+.replace(/^@/,'')
+.replace(/[^\p{L}\p{N}._-]/gu,'')
+.slice(0,64);
+}
+function createEmbedBlockquote(handle){
+const blockquote=document.createElement('blockquote');
+blockquote.className='tiktok-embed';
+blockquote.cite=`https://www.tiktok.com/@${handle}`;
+blockquote.dataset.uniqueId=handle;
+blockquote.dataset.embedType='creator';
+blockquote.style.maxWidth='780px';
+blockquote.style.minWidth='0';
+blockquote.style.margin='0';
+const section=document.createElement('section');
+const profileLink=document.createElement('a');
+profileLink.target='_blank';
+profileLink.rel='noopener noreferrer';
+profileLink.href=`https://www.tiktok.com/@${handle}?refer=creator_embed`;
+profileLink.textContent=`@${handle}`;
+section.append(profileLink);
+blockquote.append(section);
+return blockquote;
+}
+function createEmbedPlaceholder(handle){
+const placeholder=document.createElement('div');
+placeholder.className='embed-placeholder';
+const spinner=document.createElement('span');
+spinner.className='embed-placeholder-spinner';
+spinner.setAttribute('aria-hidden','true');
+const label=document.createElement('span');
+label.className='embed-placeholder-label';
+label.textContent=`Loading @${handle}...`;
+placeholder.append(spinner,label);
+return placeholder;
+}
+function createEmbedError(handle){
+const error=document.createElement('p');
+error.className='embed-error';
+error.textContent=`@${handle} could not be loaded. Refresh the page to try again.`;
+return error;
+}
+function renderCreatorShells(){
+const fragment=document.createDocumentFragment();
+creators.forEach(({handle})=>{
+const article=document.createElement('article');
+article.className='creator';
+article.dataset.handle=handle;
+article.dataset.embedState='pending';
+article.setAttribute('aria-label',`TikTok posts from @${handle}`);
+const embedSlot=document.createElement('div');
+embedSlot.className='creator-embed';
+embedSlot.dataset.state='pending';
+embedSlot.append(createEmbedPlaceholder(handle));
+article.append(embedSlot);
+fragment.append(article);
+});
+ui.grid.replaceChildren(fragment);
+ui.grid.dataset.count=String(creators.length);
+}
+function observeCreatorEmbeds(){
+const articles=Array.from(ui.grid.querySelectorAll('.creator'));
+if(!articles.length)return;
+if(typeof IntersectionObserver!=='function'){
+articles.forEach(queueCreatorEmbed);
+return;
+}
+state.embedObserver=new IntersectionObserver(
+(entries)=>{
+entries.forEach((entry)=>{
+if(!entry.isIntersecting)return;
+state.embedObserver.unobserve(entry.target);
+queueCreatorEmbed(entry.target);
+});
+},
+{rootMargin:SETTINGS.embedObserverMargin,threshold:0.01},
+);
+articles.forEach((article)=>state.embedObserver.observe(article));
+}
+function queueCreatorEmbed(article){
+if(article.dataset.embedState!=='pending')return;
+article.dataset.embedState='queued';
+state.embedQueue.push(article);
+processEmbedQueue();
+}
+function processEmbedQueue(){
+if(state.embedBusy)return;
+const article=state.embedQueue.shift();
+if(!article)return;
+state.embedBusy=true;
+loadCreatorEmbed(article).finally(()=>{
+window.setTimeout(()=>{
+state.embedBusy=false;
+processEmbedQueue();
+},SETTINGS.embedStaggerMs);
+});
+}
+function loadCreatorEmbed(article){
+const handle=article.dataset.handle;
+const embedSlot=article.querySelector('.creator-embed');
+if(!handle||!embedSlot)return Promise.resolve();
+article.dataset.embedState='loading';
+embedSlot.dataset.state='loading';
+embedSlot.replaceChildren(createEmbedBlockquote(handle));
+return injectTikTokEmbedScript()
+.then(()=>{
+watchEmbedRender(article,embedSlot);
+})
+.catch(()=>{
+article.dataset.embedState='error';
+embedSlot.dataset.state='error';
+embedSlot.replaceChildren(createEmbedError(handle));
+setStatus('error','Some TikTok embeds could not load. Refresh to retry.');
+});
+}
+function injectTikTokEmbedScript(){
+return new Promise((resolve,reject)=>{
+const script=document.createElement('script');
+script.src=SETTINGS.embedScriptUrl;
+script.async=true;
+script.addEventListener(
+'load',
+()=>{
+script.remove();
+resolve();
+},
+{once:true},
+);
+script.addEventListener(
+'error',
+()=>{
+script.remove();
+reject(new Error('TikTok embed script failed to load'));
+},
+{once:true},
+);
+document.body.append(script);
+});
+}
+function watchEmbedRender(article,embedSlot){
+const blockquote=embedSlot.querySelector('.tiktok-embed');
+const startedAt=Date.now();
+const timer=window.setInterval(()=>{
+const iframe=blockquote?.querySelector('iframe');
+const timedOut=Date.now()- startedAt>=SETTINGS.embedRenderTimeoutMs;
+if(!iframe&&!timedOut)return;
+window.clearInterval(timer);
+if(!iframe)return;
+article.dataset.embedState='ready';
+embedSlot.dataset.state='ready';
+},250);
+}
+function bindControls(){
+ui.refreshButton.addEventListener('click',reloadDashboard);
+ui.autoRefresh.addEventListener('change',()=>{
+state.autoRefresh=ui.autoRefresh.checked;
+persistAutoRefreshPreference(state.autoRefresh);
+checkAutoRefresh();
+});
+document.addEventListener('visibilitychange',()=>{
+if(document.visibilityState==='visible'){
+checkAutoRefresh();
+}
+});
+}
+function reloadDashboard(){
+window.location.reload();
+}
+function startStatusClock(){
+window.setInterval(()=>{
+if(state.statusKind==='ready'){
+updateStatusLabel();
+}
+checkAutoRefresh();
+},SETTINGS.statusClockIntervalMs);
+}
+function updateStatusLabel(){
+ui.statusText.textContent=relativeRefreshLabel(state.lastRefresh);
+ui.status.title=`Last refreshed at ${new Date(state.lastRefresh).toLocaleTimeString(
+    [],
+    { hour: '2-digit', minute: '2-digit' },
+  )}`;
+}
+function relativeRefreshLabel(timestamp){
+const elapsed=Math.max(0,Date.now()- timestamp);
+if(elapsed<15000)return 'Refreshed just now';
+if(elapsed<60000)return `Refreshed ${Math.floor(elapsed / 1000)} sec ago`;
+const minutes=Math.floor(elapsed / 60000);
+if(minutes===1)return 'Refreshed 1 min ago';
+if(minutes<60)return `Refreshed ${minutes} min ago`;
+const hours=Math.floor(minutes / 60);
+return `Refreshed ${hours} hr${hours === 1 ? '' : 's'} ago`;
+}
+function checkAutoRefresh(){
+if(
+!state.autoRefresh||
+!creators.length||
+document.visibilityState!=='visible'
+){
+return;
+}
+if(Date.now()- state.lastRefresh>=autoRefreshInterval()){
+reloadDashboard();
+}
+}
+function autoRefreshInterval(){
+return SETTINGS.autoRefreshMinutes * 60 * 1000;
+}
+function setStatus(kind,message){
+state.statusKind=kind;
+ui.status.dataset.state=kind;
+ui.statusText.textContent=message;
+ui.status.title=message;
+ui.liveStatus.textContent=message;
+}
+function updateCreatorCount(){
+ui.creatorCount.textContent=
+creators.length===1?'1 creator':`${creators.length} creators`;
+}
+function readAutoRefreshPreference(){
+try{
+const saved=window.localStorage.getItem(SETTINGS.autoRefreshStorageKey);
+return saved===null?true:saved==='true';
+}catch{
+return true;
+}
+}
+function persistAutoRefreshPreference(enabled){
+try{
+window.localStorage.setItem(SETTINGS.autoRefreshStorageKey,String(enabled));
+}catch{
+}
+}
+    </script>
+  </body>
+</html>
